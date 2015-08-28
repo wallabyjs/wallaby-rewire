@@ -3,7 +3,7 @@ var babel = require('babel');
 
 module.exports = function (wallaby) {
 
-  var babelCompiler = wallaby.compilers.babel({babel, plugins: [require('babel-plugin-rewire')]});
+  var babelCompiler = wallaby.compilers.babel({babel, plugins: ['rewire']});
 
   var webpackPostprocessor = wallabyWebpack({
     resolve: {
